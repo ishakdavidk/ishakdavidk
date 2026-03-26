@@ -4,6 +4,7 @@ I build AI systems that run on edge devices - from dashcam accident detection to
 
 **Ph.D. in Computer Engineering** | **4 published papers** | **7+ years in deep learning**
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-ishakdavidk.github.io-00c878?style=flat&logo=googlechrome&logoColor=white)](https://ishakdavidk.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ishakdavids-blue?style=flat&logo=linkedin)](https://linkedin.com/in/ishakdavids)
 [![Email](https://img.shields.io/badge/Email-ishakdavids@gmail.com-red?style=flat&logo=gmail)](mailto:ishakdavids@gmail.com)
 
