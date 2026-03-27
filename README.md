@@ -12,24 +12,6 @@ I build AI systems that run on edge devices - from dashcam accident detection to
 
 ## What I Build
 
-### Real-Time Fight Detection | Vision Transformer on Live Video
-> **98.99% F1 Score** - Fine-tuned VideoMAE v2 for violence detection
-
-[![Repo](https://img.shields.io/badge/GitHub-fighting__detection-181717?style=flat&logo=github)](https://github.com/ishakdavidk/fighting_detection)
-
-https://github.com/user-attachments/assets/fighting_detection_demo
-
-I fine-tuned a VideoMAE v2 (ViT-Base, pre-trained on Kinetics-400) on the RWF-2000 dataset for real-time violence detection. Only the last 2 transformer blocks + classifier head are unfrozen (~14.2M of 86.2M params), keeping training efficient while achieving near-perfect accuracy.
-
-**How it works:**
-- Captures 16-frame clips at 224x224 from a live camera feed
-- Runs inference through the fine-tuned ViT to classify Fight vs. Normal
-- Displays real-time predictions with confidence scores
-
-`PyTorch` `VideoMAE v2` `HuggingFace Transformers` `Vision Transformer`
-
----
-
 ### Dashcam Accident Detection | YOLOv11 on Edge Hardware
 > **Full pipeline from training to Radxa CM5 / Jetson deployment**
 
@@ -61,6 +43,23 @@ A different approach to the same problem - instead of detecting objects frame-by
 - Live MJPEG streaming with automatic accident clip saving
 
 `PyTorch` `R(2+1)D` `NVIDIA Jetson` `CUDA` `FP16`
+
+---
+
+### Real-Time Fight Detection | Live Video Analysis with VideoMAE v2
+
+[![Repo](https://img.shields.io/badge/GitHub-fighting__detection-181717?style=flat&logo=github)](https://github.com/ishakdavidk/fighting_detection)
+
+https://github.com/user-attachments/assets/fighting_detection_demo
+
+Fine-tuned VideoMAE v2 (ViT-Base, pre-trained on Kinetics-400) on the RWF-2000 dataset for real-time violence detection in live video, achieving 98.99% F1 score. Only the last 2 transformer blocks + classifier head are unfrozen (~14.2M of 86.2M params) for efficient training.
+
+**How it works:**
+- Captures 16-frame clips at 224x224 from a live camera feed
+- Runs inference through the fine-tuned ViT to classify Fight vs. Normal
+- Displays real-time predictions with confidence scores
+
+`PyTorch` `VideoMAE v2` `HuggingFace Transformers` `Vision Transformer`
 
 ---
 
