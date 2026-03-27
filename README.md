@@ -121,13 +121,12 @@ Implemented three crossover strategies for solving the Traveling Salesman Proble
 ## Tech Stack
 
 ```
-Deep Learning     PyTorch | TensorFlow | HuggingFace
-Vision            YOLO v11 | VideoMAE v2 | R(2+1)D | OpenCV
-Edge Deployment   RKNN NPU | NVIDIA Jetson | ONNX | TensorRT | FP16
-Models            CNN | 3D CNN | ViT | Siamese | AE | GAN | VAE | GNN
-Analysis          LSTM | Transformers | Anomaly Detection
-Hardware          Radxa CM5 | Jetson | Arduino | Raspberry Pi
-Languages         Python | Java | JavaScript | Node.js
+Deep Learning       PyTorch | TensorFlow | Sequence Models (RNN/LSTM/GRU) | GANs / VAEs | Siamese Networks | Autoencoders
+Computer Vision     YOLO | Vision Transformers / VideoMAE v2 | 3D CNN (R(2+1)D, SlowFast) | OpenCV | Action Recognition | Object Detection
+Edge Deployment     NVIDIA Jetson | RKNN NPU | ONNX | TensorRT | FP16 Optimization | Radxa CM5
+Programming         Python | Java / Android | SQL | Linux / Server Admin | Git / GitHub
+Research            Representation Learning | Anomaly Detection | Website Fingerprinting | Time Series Analysis | Graph Neural Networks
+Hardware            Arduino | Raspberry Pi | PLC Programming | Embedded Systems | Sensor Integration
 ```
 
 ---
