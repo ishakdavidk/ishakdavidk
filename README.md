@@ -12,40 +12,6 @@ I build AI systems that run on edge devices - from dashcam accident detection to
 
 ## What I Build
 
-### Dashcam Accident Detection | YOLOv11 on Edge Hardware
-> **Full pipeline from training to Radxa CM5 / Jetson deployment**
-
-[![Repo](https://img.shields.io/badge/GitHub-ego__accident__detection__yolo-181717?style=flat&logo=github)](https://github.com/ishakdavidk/ego_accident_detection_yolo)
-
-An end-to-end system that detects accidents involving the dashcam vehicle (ego-vehicle) and runs entirely on edge devices with NPU acceleration.
-
-**What I built:**
-- Two-stage YOLOv11s training pipeline (30 epochs frozen + 80 epochs full fine-tuning at 1024x1024)
-- Model conversion chain: PyTorch `.pt` -> ONNX -> RKNN for NPU deployment
-- Edge system on Radxa CM5: 4K camera input, NPU inference, event recording with pre/post buffer, GPIO LED alerts, HTTP MJPEG live streaming
-- Temporal confidence buffer with cooldown to suppress false positives
-
-`YOLOv11` `RKNN NPU` `ONNX` `Radxa CM5` `NVIDIA Jetson` `OpenCV`
-
----
-
-### Dashcam Accident Detection | 3D CNN with Spatiotemporal Learning
-> **R(2+1)D-18 for video-level accident classification, deployed on Jetson**
-
-[![Repo](https://img.shields.io/badge/GitHub-ego__accident__detection__r2plus1d-181717?style=flat&logo=github)](https://github.com/ishakdavidk/ego_accident_detection_r2plus1d)
-
-A different approach to the same problem - instead of detecting objects frame-by-frame, this model understands the temporal dynamics of an accident using 3D convolutions.
-
-**What I built:**
-- R(2+1)D-18 backbone (pretrained on Kinetics-400) with custom binary classification head
-- Trained on DoTA dataset, filtered for ego-involved accidents only
-- Jetson deployment: dual USB cameras, FP16 inference, batched processing
-- Live MJPEG streaming with automatic accident clip saving
-
-`PyTorch` `R(2+1)D` `NVIDIA Jetson` `CUDA` `FP16`
-
----
-
 ### Real-Time Fight Detection | Live Video Analysis with VideoMAE v2
 
 [![Repo](https://img.shields.io/badge/GitHub-fighting__detection-181717?style=flat&logo=github)](https://github.com/ishakdavidk/fighting_detection)
