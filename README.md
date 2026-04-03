@@ -1,6 +1,6 @@
 # Hi, I'm David Ishak Kosasih
 
-I build AI systems that run on edge devices - from dashcam accident detection to real-time drone tracking. My work sits at the intersection of deep learning research and practical deployment on resource-constrained hardware.
+I build AI systems that run on edge devices - from real-time video recognition to drone tracking. My work sits at the intersection of deep learning research and practical deployment on resource-constrained hardware.
 
 **Ph.D. in Computer Engineering** | **7+ years in deep learning**
 
