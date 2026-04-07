@@ -12,23 +12,6 @@ I build AI systems that run on edge devices - from real-time video recognition t
 
 ## What I Build
 
-### Real-Time Fight Detection | Live Video Analysis with VideoMAE v2
-
-[![Repo](https://img.shields.io/badge/GitHub-fighting__detection-181717?style=flat&logo=github)](https://github.com/ishakdavidk/fighting_detection)
-
-https://github.com/user-attachments/assets/fighting_detection_demo
-
-Fine-tuned VideoMAE v2 (ViT-Base, pre-trained on Kinetics-400) on the RWF-2000 dataset for real-time violence detection in live video, achieving 98.99% F1 score. Only the last 2 transformer blocks + classifier head are unfrozen (~14.2M of 86.2M params) for efficient training.
-
-**How it works:**
-- Captures 16-frame clips at 224x224 from a live camera feed
-- Runs inference through the fine-tuned ViT to classify Fight vs. Normal
-- Displays real-time predictions with confidence scores
-
-`PyTorch` `VideoMAE v2` `HuggingFace Transformers` `Vision Transformer`
-
----
-
 ### Co-Location Detection | Published Research
 > **Sensors Journal 2021** - Can two phones tell if they're in the same room?
 
@@ -89,7 +72,7 @@ Implemented three crossover strategies for solving the Traveling Salesman Proble
 ```
 Deep Learning       PyTorch | TensorFlow | Sequence Models (RNN/LSTM/GRU) | GANs / VAEs | Siamese Networks | Autoencoders
 Computer Vision     YOLO | Vision Transformers / VideoMAE v2 | 3D CNN (R(2+1)D, SlowFast) | OpenCV | Action Recognition | Object Detection
-Edge Deployment     NVIDIA Jetson | RKNN NPU | ONNX | TensorRT | FP16 Optimization | Radxa CM5
+Edge Deployment     NVIDIA Jetson | RKNN NPU | ONNX | TensorRT | FP16 Optimization | NPU-accelerated edge devices
 Programming         Python | Java / Android | SQL | Linux / Server Admin | Git / GitHub
 Research            Representation Learning | Anomaly Detection | Website Fingerprinting | Time Series Analysis | Graph Neural Networks
 Hardware            Arduino | Raspberry Pi | PLC Programming | Embedded Systems | Sensor Integration
